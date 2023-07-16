@@ -7,7 +7,7 @@ static const Block blocks[] = {
     {"", "~/.local/bin/statusbar/weather", 1000, 0},
     {"🌤 ", "~/.local/bin/aircon-stuff/aircon status | sed s/{// | sed s/}//", 20, 5},
     {"💡 ", "~/.local/bin/misc/lights status", 20, 3},
-    {"✅ ", "org-today", 20, 0},
+    {"✅ ", "todoist-cli list --filter '(today | overdue)' | wc -l", 20, 0},
 	{"", "~/.local/bin/statusbar/timeDate",					60,		0},
 };
 
