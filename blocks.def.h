@@ -6,12 +6,13 @@ static const Block blocks[] = {
     {"", "~/.local/bin/statusbar/batteryLife", 100, 0},
     {"", "~/.local/bin/statusbar/weather", 1000, 0},
     {"🌤 ", "~/.local/bin/aircon-stuff/aircon status | sed s/{// | sed s/}//", 20, 5},
-    {"💡 ", "~/.local/bin/misc/lights status", 20, 3},
+    {"",	"network-stats",	1,	16},
+    // {"💡 ", "~/.local/bin/misc/lights status", 20, 3},
     {"✅ ", "todoist-cli list --filter '(today | overdue)' | wc -l", 20, 0},
     {"", "~/.local/bin/statusbar/mailbox", 180, 6},
 	{"", "~/.local/bin/statusbar/timeDate",					60,		0},
 };
 
 //sets delimeter between status commands. NULL character ('\0') means no delimeter.
-static char delim[] = " | ";
+static char delim[] = " ";
 static unsigned int delimLen = 5;
